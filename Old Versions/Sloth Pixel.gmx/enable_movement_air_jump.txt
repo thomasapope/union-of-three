@@ -1,0 +1,53 @@
+///enable_movement_air_jump(input, axis, airspd)
+/*
+    Call this script in order to add platform in air jumping
+    (air jumping) to a movement entity.
+*/
+
+var input = argument[0];
+var axis = argument[1];
+var airspd = argument[2];
+
+var height, width;
+
+// Calculate Air Jump Height
+if (jump > 3) {
+    jump = 3;
+}
+    
+switch (jump) 
+{
+    case 0:
+        height = 56;
+        width = 64;
+        break;
+    case 1:
+        height = 32;
+        width = 48;
+        break;
+    case 2:
+        height = 28;
+        width = 56;
+        break;
+    case 3:
+        height = 20;
+        width = 64;
+        break;
+}
+    
+// Air jump
+if (!ground && air_jumps > 0 && input && !place_meeting(x+(sign(axis) * airspd), y, collision_object)) {
+    var jump_height = (2 * height * AIR_SPEED) / width;
+    var grav = (2 * height * sqr(AIR_SPEED)) / sqr(width);
+    sc_jump_new(jump_height, grav, airspd, JUMP_BOOST, axis, self);
+    jy = y;
+    jump++;
+    acc = AIR_ACCELERATION;
+    air_jumps--;
+}
+
+// Air jump reset
+if (ground) {
+    air_jumps = MAX_JUMPS;
+    jump = 0;
+}
