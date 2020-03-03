@@ -1,0 +1,141 @@
+// Initialise the global array that allows the lookup of the depth of a given object
+// GM2.0 does not have a depth on objects so on import from 1.x a global array is created
+// NOTE: MacroExpansion is used to insert the array initialisation at import time
+gml_pragma( "global", "__global_object_depths()");
+
+// insert the generated arrays here
+global.__objectDepths[0] = 0; // ob_wall
+global.__objectDepths[1] = 0; // ob_slope_1
+global.__objectDepths[2] = 0; // ob_slope_2
+global.__objectDepths[3] = 0; // ob_slope_1_5
+global.__objectDepths[4] = 0; // ob_slope_6
+global.__objectDepths[5] = 0; // ob_slope_8
+global.__objectDepths[6] = 0; // ob_slope_12
+global.__objectDepths[7] = 0; // ob_slope_24
+global.__objectDepths[8] = -1; // PAR_PLAYER
+global.__objectDepths[9] = -1; // ob_player
+global.__objectDepths[10] = -2; // ob_head
+global.__objectDepths[11] = -2; // ob_arm
+global.__objectDepths[12] = 0; // ob_box
+global.__objectDepths[13] = 0; // ob_crate
+global.__objectDepths[14] = 0; // ob_door
+global.__objectDepths[15] = -1; // ob_generator
+global.__objectDepths[16] = 0; // ob_barrier
+global.__objectDepths[17] = 1; // ob_terminal
+global.__objectDepths[18] = 0; // PAR_DOOR
+global.__objectDepths[19] = -1; // ob_kinetic_cannon
+global.__objectDepths[20] = 0; // ob_keycard
+global.__objectDepths[21] = 0; // ob_sideladder
+global.__objectDepths[22] = 0; // ob_platform
+global.__objectDepths[23] = 0; // PAR_MOVING_SOLID
+global.__objectDepths[24] = 0; // ob_elevator
+global.__objectDepths[25] = -1000; // ob_draw_text
+global.__objectDepths[26] = 0; // ob_draw_line
+global.__objectDepths[27] = 0; // ob_fade_effect
+global.__objectDepths[28] = 3; // ob_spawner
+global.__objectDepths[29] = 0; // ob_hitscan
+global.__objectDepths[30] = 0; // ob_projectile
+global.__objectDepths[31] = 0; // ob_seeker
+global.__objectDepths[32] = -2; // ob_crit_test
+global.__objectDepths[33] = -2; // ob_crit_test_2
+global.__objectDepths[34] = 0; // ob_init
+global.__objectDepths[35] = 0; // ob_camera
+global.__objectDepths[36] = -10000; // ob_display_manager
+global.__objectDepths[37] = 0; // ob_grid
+global.__objectDepths[38] = 0; // ob_player_control
+global.__objectDepths[39] = 0; // PAR_SOLID
+global.__objectDepths[40] = 0; // PAR_COLLISION
+global.__objectDepths[41] = 0; // PAR_SMOOTH
+global.__objectDepths[42] = 0; // PAR_SLOPE
+global.__objectDepths[43] = -2; // PAR_BREAKABLE
+global.__objectDepths[44] = 0; // PAR_SWITCH
+global.__objectDepths[45] = 0; // PAR_SYSTEM
+global.__objectDepths[46] = 0; // PAR_DAMAGE
+global.__objectDepths[47] = 0; // ob_pathtest
+global.__objectDepths[48] = 0; // ob_pathseeker
+global.__objectDepths[49] = 0; // ob_damage
+global.__objectDepths[50] = 0; // ob_pathonly
+global.__objectDepths[51] = -1; // ob_bot
+global.__objectDepths[52] = -2; // ob_bot_arm
+global.__objectDepths[53] = -3; // ob_bot_head
+global.__objectDepths[54] = 0; // ob_checkpoint
+global.__objectDepths[55] = 0; // ob_ladder
+global.__objectDepths[56] = -1; // ob_obstacle
+global.__objectDepths[57] = 0; // ob_textbox
+global.__objectDepths[58] = 0; // PAR_TALK
+global.__objectDepths[59] = 0; // PAR_PUSHABLE
+global.__objectDepths[60] = 0; // object60
+
+
+global.__objectNames[0] = "ob_wall";
+global.__objectNames[1] = "ob_slope_1";
+global.__objectNames[2] = "ob_slope_2";
+global.__objectNames[3] = "ob_slope_1_5";
+global.__objectNames[4] = "ob_slope_6";
+global.__objectNames[5] = "ob_slope_8";
+global.__objectNames[6] = "ob_slope_12";
+global.__objectNames[7] = "ob_slope_24";
+global.__objectNames[8] = "PAR_PLAYER";
+global.__objectNames[9] = "ob_player";
+global.__objectNames[10] = "ob_head";
+global.__objectNames[11] = "ob_arm";
+global.__objectNames[12] = "ob_box";
+global.__objectNames[13] = "ob_crate";
+global.__objectNames[14] = "ob_door";
+global.__objectNames[15] = "ob_generator";
+global.__objectNames[16] = "ob_barrier";
+global.__objectNames[17] = "ob_terminal";
+global.__objectNames[18] = "PAR_DOOR";
+global.__objectNames[19] = "ob_kinetic_cannon";
+global.__objectNames[20] = "ob_keycard";
+global.__objectNames[21] = "ob_sideladder";
+global.__objectNames[22] = "ob_platform";
+global.__objectNames[23] = "PAR_MOVING_SOLID";
+global.__objectNames[24] = "ob_elevator";
+global.__objectNames[25] = "ob_draw_text";
+global.__objectNames[26] = "ob_draw_line";
+global.__objectNames[27] = "ob_fade_effect";
+global.__objectNames[28] = "ob_spawner";
+global.__objectNames[29] = "ob_hitscan";
+global.__objectNames[30] = "ob_projectile";
+global.__objectNames[31] = "ob_seeker";
+global.__objectNames[32] = "ob_crit_test";
+global.__objectNames[33] = "ob_crit_test_2";
+global.__objectNames[34] = "ob_init";
+global.__objectNames[35] = "ob_camera";
+global.__objectNames[36] = "ob_display_manager";
+global.__objectNames[37] = "ob_grid";
+global.__objectNames[38] = "ob_player_control";
+global.__objectNames[39] = "PAR_SOLID";
+global.__objectNames[40] = "PAR_COLLISION";
+global.__objectNames[41] = "PAR_SMOOTH";
+global.__objectNames[42] = "PAR_SLOPE";
+global.__objectNames[43] = "PAR_BREAKABLE";
+global.__objectNames[44] = "PAR_SWITCH";
+global.__objectNames[45] = "PAR_SYSTEM";
+global.__objectNames[46] = "PAR_DAMAGE";
+global.__objectNames[47] = "ob_pathtest";
+global.__objectNames[48] = "ob_pathseeker";
+global.__objectNames[49] = "ob_damage";
+global.__objectNames[50] = "ob_pathonly";
+global.__objectNames[51] = "ob_bot";
+global.__objectNames[52] = "ob_bot_arm";
+global.__objectNames[53] = "ob_bot_head";
+global.__objectNames[54] = "ob_checkpoint";
+global.__objectNames[55] = "ob_ladder";
+global.__objectNames[56] = "ob_obstacle";
+global.__objectNames[57] = "ob_textbox";
+global.__objectNames[58] = "PAR_TALK";
+global.__objectNames[59] = "PAR_PUSHABLE";
+global.__objectNames[60] = "object60";
+
+
+// create another array that has the correct entries
+var len = array_length_1d(global.__objectDepths);
+global.__objectID2Depth = [];
+for( var i=0; i<len; ++i ) {
+	var objID = asset_get_index( global.__objectNames[i] );
+	if (objID >= 0) {
+		global.__objectID2Depth[ objID ] = global.__objectDepths[i];
+	} // end if
+} // end for

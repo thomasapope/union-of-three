@@ -1,0 +1,644 @@
+Converting GML script: ${project_dir}\scripts\sc_damage\sc_damage.gml
+Converted description /// @description  sc_damage()
+
+Converting GML script: ${project_dir}\scripts\player_crit\player_crit.gml
+Converted description /// @description  player_crit(px, py, target, debug?)/// @param px
+/// @param  py
+/// @param  target
+/// @param  debug?
+
+Converting GML script: ${project_dir}\scripts\crit_test_crit\crit_test_crit.gml
+Converted description /// @description  crit_test_crit(xx, yy, target, debug?)/// @param xx
+/// @param  yy
+/// @param  target
+/// @param  debug?
+
+Converting GML script: ${project_dir}\scripts\crit_test_2_crit\crit_test_2_crit.gml
+Converted description /// @description  crit_test_crit(xx, yy, target, debug?)/// @param xx
+/// @param  yy
+/// @param  target
+/// @param  debug?
+
+Converting GML script: ${project_dir}\scripts\default_crit\default_crit.gml
+Converted description /// @description  default_crit(px, py, target, debug?)/// @param px
+/// @param  py
+/// @param  target
+/// @param  debug?
+
+Converting GML script: ${project_dir}\scripts\sc_weapon_array\sc_weapon_array.gml
+Converted description /// @description  sc_weapon_array()
+
+Converting GML script: ${project_dir}\scripts\sc_multi_object_cam\sc_multi_object_cam.gml
+Converted builtin - line 62: view_xview[view] = xPos -> __view_set( e__VW.XView, view, xPos )
+Converted builtin - line 63: view_yview[view] = yPos -> __view_set( e__VW.YView, view, yPos )
+Converted builtin - line 42: view_wview[view] -> __view_get( e__VW.WView, view )
+Converted builtin - line 58: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview[view] = min(room_width, VSize * (view_wport[view]/view_hport[view])) -> __view_set( e__VW.WView, view, min(room_width, VSize * (view_wport[view]/view_hport[view])) )
+Converted builtin - line 43: view_hview[view] -> __view_get( e__VW.HView, view )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview[view] = min(room_height, VSize) -> __view_set( e__VW.HView, view, min(room_height, VSize) )
+Converted builtin - line 37: view_wport[view] -> __view_get( e__VW.WPort, view )
+Converted builtin - line 37: view_hport[view] -> __view_get( e__VW.HPort, view )
+Converted description /// @description sc_multi_object_cam(view, target, min)/// @param view
+/// @param  target
+/// @param  min
+Converted builtin - line 42: view_wport[view] -> __view_get( e__VW.WPort, view )
+Converted builtin - line 42: view_hport[view] -> __view_get( e__VW.HPort, view )
+
+Converting GML script: ${project_dir}\scripts\sc_camera_move\sc_camera_move.gml
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: view_xview = x - view_wview / 2 -> __view_set( e__VW.XView, 0, x - view_wview / 2 )
+Converted builtin - line 28: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 24: view_yview = y - view_hview / 2 -> __view_set( e__VW.YView, 0, y - view_hview / 2 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description  sc_camera_move(xTo, yTo) /// @param xTo
+/// @param  yTo
+Converted builtin - line 29: view_xview = clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) )
+Converted builtin - line 30: view_yview = clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) )
+Converted builtin - line 25: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}\scripts\display_write_specs\display_write_specs.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description display_write_spec(display enum)/// @param display enum
+
+Converting GML script: ${project_dir}\scripts\approach\approach.gml
+Converted description /// @description approach(current, target, amount)/// @param current
+/// @param  target
+/// @param  amount
+
+Converting GML script: ${project_dir}\scripts\approach_movespeed\approach_movespeed.gml
+Converted description /// @description approach_movespeed(current, target, amount, haxis)/// @param current
+/// @param  target
+/// @param  amount
+/// @param  haxis
+
+Converting GML script: ${project_dir}\scripts\within\within.gml
+Converted description /// @description within(value1, value2, within)/// @param value1
+/// @param  value2
+/// @param  within
+
+Converting GML script: ${project_dir}\scripts\toggle\toggle.gml
+Converted description /// @description toggle(val)/// @param val
+
+Converting GML script: ${project_dir}\scripts\instance_place_multiple\instance_place_multiple.gml
+Converted description /// @description instance_place_multiple(x, y, instance)/// @param x
+/// @param  y
+/// @param  instance
+
+Converting GML script: ${project_dir}\scripts\instances_place_multiple\instances_place_multiple.gml
+Converted description /// @description instances_place_multiple(x, y, objects)/// @param x
+/// @param  y
+/// @param  objects
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_right\decimal_bbox_right.gml
+Converted description /// @description decimal_bbox_right()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_bottom\decimal_bbox_bottom.gml
+Converted description /// @description decimal_bbox_bottom()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_left\decimal_bbox_left.gml
+Converted description /// @description decimal_bbox_left()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_top\decimal_bbox_top.gml
+Converted description /// @description decimal_bbox_top()
+
+Converting GML script: ${project_dir}\scripts\place_meeting_exception\place_meeting_exception.gml
+Converted description /// @description place_meeting_exception(x, y, obj, exception)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  exception
+
+Converting GML script: ${project_dir}\scripts\position_meeting_exception\position_meeting_exception.gml
+Converted description /// @description position_meeting_exception(x, y, obj, exception)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  exception
+
+Converting GML script: ${project_dir}\scripts\initialize_movement_entity\initialize_movement_entity.gml
+Converted description /// @description initialize_movement_entity(gravity, friction, air_resistance, bounce, collision_object)/// @param gravity
+/// @param  friction
+/// @param  air_resistance
+/// @param  bounce
+/// @param  collision_object
+
+Converting GML script: ${project_dir}\scripts\move_movement_entity\move_movement_entity.gml
+Converted description /// @description move_movement_entity()
+
+Converting GML script: ${project_dir}\scripts\move_solid_entity\move_solid_entity.gml
+Converted description /// @description move_solid_entity(push_objects)/// @param push_objects
+
+Converting GML script: ${project_dir}\scripts\add_movement_horizontal_vertical\add_movement_horizontal_vertical.gml
+Converted description /// @description add_movement_horizontal_vertical(hacceleration, vacceleration)/// @param hacceleration
+/// @param  vacceleration
+
+Converting GML script: ${project_dir}\scripts\set_movement_horizontal_vertical\set_movement_horizontal_vertical.gml
+Converted description /// @description set_movement_horizontal_vertical(hspeed, vspeed)/// @param hspeed
+/// @param  vspeed
+
+Converting GML script: ${project_dir}\scripts\set_movement_direction_speed\set_movement_direction_speed.gml
+Converted description /// @description set_movement_direction_speed(direction, speed);/// @param direction
+/// @param  speed
+
+Converting GML script: ${project_dir}\scripts\add_movement_direction_acceleration\add_movement_direction_acceleration.gml
+Converted description /// @description add_movement_direction_acceleration(direction, acceleration);/// @param direction
+/// @param  acceleration
+
+Converting GML script: ${project_dir}\scripts\add_movement_horizontal_vertical_maxspeed\add_movement_horizontal_vertical_maxspeed.gml
+Converted description /// @description add_movement_horizontal_vertical_maxspeed(hacceleration, vacceleration, maxhspeed, maxvspeed, axis)/// @param hacceleration
+/// @param  vacceleration
+/// @param  maxhspeed
+/// @param  maxvspeed
+/// @param  axis
+
+Converting GML script: ${project_dir}\scripts\warp_movement_entity\warp_movement_entity.gml
+Converted description /// @description warp_movement_entity(xwarp, vwarp)/// @param xwarp
+/// @param  vwarp
+
+Converting GML script: ${project_dir}\scripts\enable_movement_jump\enable_movement_jump.gml
+Converted description /// @description enable_movement_jump(input, release_input, hold_input, axis, airspd, preset)/// @param input
+/// @param  release_input
+/// @param  hold_input
+/// @param  axis
+/// @param  airspd
+/// @param  preset
+
+Converting GML script: ${project_dir}\scripts\sc_jump\sc_jump.gml
+Converted description /// @description sc_jump(jump_height, jump_weight, h_speed, h_boost, axis, target)/// @param jump_height
+/// @param  jump_weight
+/// @param  h_speed
+/// @param  h_boost
+/// @param  axis
+/// @param  target
+
+Converting GML script: ${project_dir}\scripts\enable_movement_wall_jump\enable_movement_wall_jump.gml
+Converted description /// @description enable_movement_wall_hang(distance, jump_hold_input, jump_input, right_input, left_input)/// @param distance
+/// @param  jump_hold_input
+/// @param  jump_input
+/// @param  right_input
+/// @param  left_input
+
+Converting GML script: ${project_dir}\scripts\sc_wall_jump\sc_wall_jump.gml
+Converted description /// @description sc_wall_jump(distance, axis)/// @param distance
+/// @param  axis
+
+Converting GML script: ${project_dir}\scripts\enable_movement_run\enable_movement_run.gml
+Converted description /// @description enable_movement_run(acceleration, max_speed, max_speed_air, axis)/// @param acceleration
+/// @param  max_speed
+/// @param  max_speed_air
+/// @param  axis
+
+Converting GML script: ${project_dir}\scripts\enable_movement_rise\enable_movement_rise.gml
+Converted description /// @description enable_movement_rise(acceleration, max_speed, max_speed_air, up_input, down_input)/// @param acceleration
+/// @param  max_speed
+/// @param  max_speed_air
+/// @param  up_input
+/// @param  down_input
+
+Converting GML script: ${project_dir}\scripts\enable_movement_run_axis\enable_movement_run_axis.gml
+Converted description /// @description enable_movement_run_axis(acceleration, max_speed, horizontal_axis)/// @param acceleration
+/// @param  max_speed
+/// @param  horizontal_axis
+
+Converting GML script: ${project_dir}\scripts\enable_movement_air_jump\enable_movement_air_jump.gml
+Converted description /// @description enable_movement_air_jump(input, axis, airspd)/// @param input
+/// @param  axis
+/// @param  airspd
+
+Converting GML script: ${project_dir}\scripts\enable_movement_ledge_grab\enable_movement_ledge_grab.gml
+Converted description /// @description  enable_movement_ledge_grab()
+
+Converting GML script: ${project_dir}\scripts\action_fire_weapon\action_fire_weapon.gml
+Converted description /// @description  action_fire_weapon (weapon, creator, dir)/// @param weapon
+/// @param  creator
+/// @param  dir
+
+Converting GML script: ${project_dir}\scripts\enable_action_push\enable_action_push.gml
+Converted description /// @description  enable_action_push()
+
+Converting GML script: ${project_dir}\scripts\animation_end\animation_end.gml
+Converted description /// @description animation_end()
+
+Converting GML script: ${project_dir}\scripts\animation_hit_frame\animation_hit_frame.gml
+Converted description /// @description animation_hit_frame(frame)/// @param frame
+
+Converting GML script: ${project_dir}\scripts\enable_movement_platform_sprites\enable_movement_platform_sprites.gml
+Converted description /// @description enable_movement_platform_sprites(idle_sprite, walk_sprite, jump_sprite, walk_animation_speed)/// @param idle_sprite
+/// @param  walk_sprite
+/// @param  jump_sprite
+/// @param  walk_animation_speed
+
+Converting GML script: ${project_dir}\scripts\sc_death\sc_death.gml
+Converted description /// @description  sc_death()
+
+Converting GML script: ${project_dir}\scripts\sc_player_clear\sc_player_clear.gml
+Converted description /// @description  sc_player_clear()
+
+Converting GML script: ${project_dir}\scripts\get_controls\get_controls.gml
+Converted description /// @description get_controls()
+Converted string - line 3: 'D' -> "D"
+Converted string - line 4: 'A' -> "A"
+Converted string - line 7: 'W' -> "W"
+Converted string - line 8: 'W' -> "W"
+Converted string - line 9: 'W' -> "W"
+Converted string - line 11: 'S' -> "S"
+Converted string - line 12: 'S' -> "S"
+
+Converting GML script: ${project_dir}\scripts\player_proximity\player_proximity.gml
+Converted description /// @description  is_player_proximity(radius) returns boolean/// @param radius
+
+Converting GML script: ${project_dir}\scripts\player_activation\player_activation.gml
+Converted description /// @description  player_activation()
+
+Converting GML script: ${project_dir}\scripts\player_state_move\player_state_move.gml
+Converted description /// @description player_state_move()
+
+Converting GML script: ${project_dir}\scripts\player_state_talk\player_state_talk.gml
+Converted description /// @description  player_state_talk()
+
+Converting GML script: ${project_dir}\scripts\player_state_ledge_grab\player_state_ledge_grab.gml
+Converted description /// @description  player_state_ledge_grab()
+
+Converting GML script: ${project_dir}\scripts\player_state_ladder\player_state_ladder.gml
+Converted description /// @description  player_state_ladder()
+
+Converting GML script: ${project_dir}\scripts\player_state_climbing\player_state_climbing.gml
+Converted description /// @description  player_state_climbing()
+
+Converting GML script: ${project_dir}\scripts\sc_create_player_parts\sc_create_player_parts.gml
+Converted description /// @description  sc_player_parts()
+
+Converting GML script: ${project_dir}\scripts\sc_destroy_player_parts\sc_destroy_player_parts.gml
+Converted description /// @description  sc_destroy_player_parts()
+
+Converting GML script: ${project_dir}\scripts\sc_toggle_control\sc_toggle_control.gml
+Converted description /// @description  sc_toggle_control()
+
+Converting GML script: ${project_dir}\scripts\get_target\get_target.gml
+Converted description /// @description get_target(target, vision)/// @param target
+/// @param  vision
+
+Converting GML script: ${project_dir}\scripts\get_npc_axis\get_npc_axis.gml
+Converted description /// @description get_npc_axis(xaxis, targetx, targety)/// @param xaxis
+/// @param  targetx
+/// @param  targety
+
+Converting GML script: ${project_dir}\scripts\sc_debug\sc_debug.gml
+Converted description /// @description sc_debug(object position, hspd and vspd, bot commands, xdistance, colour)/// @param object position
+/// @param  hspd and vspd
+/// @param  bot commands
+/// @param  xdistance
+/// @param  colour
+
+Converting GML script: ${project_dir}\scripts\state_npc_idle\state_npc_idle.gml
+Converted description /// @description  sc_npc_idle_state()
+
+Converting GML script: ${project_dir}\scripts\check_for_pc\check_for_pc.gml
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description  sc_check_for_pc()
+
+Converting GML script: ${project_dir}\scripts\state_npc_stall\state_npc_stall.gml
+Converted description /// @description  sc_npc_stall_state()
+
+Converting GML script: ${project_dir}\scripts\state_npc_choose_next\state_npc_choose_next.gml
+Converted description /// @description  sc_npc_choose_next_state()
+
+Converting GML script: ${project_dir}\scripts\state_npc_chase\state_npc_chase.gml
+Converted description /// @description  sc_npc_chase_state()
+
+Converting GML script: ${project_dir}\scripts\state_npc_wander\state_npc_wander.gml
+Converted builtin - line 3: view_wview -> __view_get( e__VW.WView, 0 )
+Converted description /// @description  sc_npc_wander_state()
+
+Converting GML script: ${project_dir}\scripts\state_pathonly_chase\state_pathonly_chase.gml
+Converted builtin - line 3: view_wview -> __view_get( e__VW.WView, 0 )
+Converted description /// @description  sc_npc_chase_state()
+
+Converting GML script: ${project_dir}\scripts\state_pathonly_wander\state_pathonly_wander.gml
+Converted builtin - line 3: view_wview -> __view_get( e__VW.WView, 0 )
+Converted description /// @description  sc_npc_wander_state()
+
+Converting GML script: ${project_dir}\scripts\trigger\trigger.gml
+Converted description /// @description  trigger(channel, system)/// @param channel
+/// @param  system
+
+Converting GML script: ${project_dir}\scripts\fade_out\fade_out.gml
+Converted description /// @description  sc_fade_out()
+
+Converting GML script: ${project_dir}\scripts\fade_in\fade_in.gml
+Converted description /// @description  sc_fade_in()
+
+Converting GML script: ${project_dir}\scripts\fade_bound\fade_bound.gml
+Converted description /// @description  fade_bound(dir)/// @param dir
+
+Converting GML script: ${project_dir}\scripts\sc_charactercheck\sc_charactercheck.gml
+Converted string - line 15: "\" -> "\\"
+
+Converting GML script: ${project_dir}\scripts\sc_stredit\sc_stredit.gml
+Converted string - line 16: "\" -> "\\"
+
+Converting GML script: ${project_dir}\scripts\sc_text\sc_text.gml
+Converted description /// @description scr_text(val);/// @param val
+
+Converting GML script: ${project_dir}\scripts\sc_textbox\sc_textbox.gml
+Converted description /// @description scr_textbox(id)/// @param id
+
+Converting GML script: ${project_dir}\scripts\sc_tcolorget\sc_tcolorget.gml
+Converted description /// @description scr_tcolorget();
+Converted string - line 6: "\" -> "\\"
+
+Converting GML script: ${project_dir}\scripts\sc_name\sc_name.gml
+Converted description /// @description  scr_name(val, size, times);/// @param val
+/// @param  size
+/// @param  times
+
+Converting GML script: ${project_dir}\scripts\sc_cicount\sc_cicount.gml
+Converted description /// @description scr_cicount(count,times);/// @param count
+/// @param times
+
+Converting GML script: ${project_dir}\scripts\sc_cutin\sc_cutin.gml
+Converted description /// @description scr_cutin(cut-in,sprite,x,flipped,changed,times);/// @param cut-in
+/// @param sprite
+/// @param x
+/// @param flipped
+/// @param changed
+/// @param times
+
+Converting GML script: ${project_dir}\scripts\sc_choices\sc_choices.gml
+Converted description /// @description scr_choices(ind);/// @param ind
+
+Converting GML script: ${project_dir}\scripts\sc_drawqbox\sc_drawqbox.gml
+Converted description /// @description  scr_drawqbox();
+
+Converting GML script: ${project_dir}\scripts\sc_option\sc_option.gml
+Converted description /// @description  scr_option(ind, str, goto);/// @param ind
+/// @param  str
+/// @param  goto
+
+Converting GML script: ${project_dir}\scripts\sc_qboxcheck\sc_qboxcheck.gml
+Converted description /// @description scr_qboxcheck();
+
+Converting GML script: ${project_dir}\scripts\player_state_push\player_state_push.gml
+Converted description /// @description  player_state_push()
+
+!!! Font fn_01 uses a font (Helvetica LT Std) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fn_01\fn_01.gms1.png
+!!! Font fn_02 uses a font (Helvetica LT Std) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fn_02\fn_02.gms1.png
+Font fn_textbox has been converted to font family Courier New (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fn_textbox\fn_textbox.gms1.png
+Converting GML script: ${project_dir}\objects\PAR_PLAYER\Create_0.gml
+Converted description /// @description  INITIALIZE THE PLAYER
+
+Converting GML script: ${project_dir}\objects\PAR_PLAYER\Alarm_1.gml
+Converted description /// @description  Acceleration Timer
+
+Converting GML script: ${project_dir}\objects\PAR_PLAYER\Alarm_0.gml
+Converted description /// @description  Motion Path Timer
+
+Converting GML script: ${project_dir}\objects\PAR_PLAYER\Step_0.gml
+Converted description /// @description  UNIVERSAL STEP EVENT
+
+Converting GML script: ${project_dir}\objects\PAR_PLAYER\Other_4.gml
+Converted description /// @description  Room Start Setup
+
+Converting GML script: ${project_dir}\objects\ob_arm\Alarm_0.gml
+Converted description /// @description  Bullet Delay Alarm
+
+Converting GML script: ${project_dir}\objects\ob_arm\Step_0.gml
+Converted description /// @description  Rotate Sprite and Fire Weapons
+
+Converting GML script: ${project_dir}\objects\ob_generator\Step_0.gml
+Converted description /// @description  Generate Barrier
+
+Converting GML script: ${project_dir}\objects\PAR_DOOR\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\ob_kinetic_cannon\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\ob_kinetic_cannon\Step_0.gml
+Converted description /// @description  Launch the player
+
+Converting GML script: ${project_dir}\objects\ob_sideladder\Create_0.gml
+Converted description /// @description  Move the ladder up against a wall or ledge
+
+Converting GML script: ${project_dir}\objects\ob_sideladder\Draw_0.gml
+Converted description /// @description  Draw the top of the ladder
+
+Converting GML script: ${project_dir}\objects\PAR_MOVING_SOLID\Create_0.gml
+Converted description /// @description  Initialize the moving solid
+
+Converting GML script: ${project_dir}\objects\PAR_MOVING_SOLID\Step_2.gml
+Converted description /// @description  Move the solid entity
+
+Converting GML script: ${project_dir}\objects\ob_fade_effect\Create_0.gml
+Converted description /// @description  Fade Settings
+
+Converting GML script: ${project_dir}\objects\ob_fade_effect\Step_0.gml
+Converted description /// @description  Fade
+
+Converting GML script: ${project_dir}\objects\ob_fade_effect\Draw_64.gml
+Converted description /// @description  Draw Fade
+
+Converting GML script: ${project_dir}\objects\ob_spawner\Alarm_1.gml
+Converted description /// @description  Spawn Alarm
+
+Converting GML script: ${project_dir}\objects\ob_spawner\Alarm_0.gml
+Converted description /// @description  Spawn Set Alarm
+
+Converting GML script: ${project_dir}\objects\ob_spawner\Step_0.gml
+Converted description /// @description  Destroy Spawner
+
+Converting GML script: ${project_dir}\objects\ob_hitscan\Create_0.gml
+Converted description /// @description  Initialize the Bullet
+
+Converting GML script: ${project_dir}\objects\ob_hitscan\Draw_0.gml
+Converted description /// @description  Don't draw self
+
+Converting GML script: ${project_dir}\objects\ob_projectile\Create_0.gml
+Converted description /// @description  Initialize the Bullet
+
+Converting GML script: ${project_dir}\objects\ob_projectile\Alarm_1.gml
+Converted description /// @description  Destruction Alarm
+
+Converting GML script: ${project_dir}\objects\ob_seeker\Create_0.gml
+Converted description /// @description  Initialize Seeker
+
+Converting GML script: ${project_dir}\objects\ob_seeker\Alarm_2.gml
+Converted description /// @description  Wander
+
+Converting GML script: ${project_dir}\objects\ob_seeker\Alarm_1.gml
+Converted description /// @description  Path Reset Alarm
+
+Converting GML script: ${project_dir}\objects\ob_seeker\Alarm_0.gml
+Converted description /// @description  Stall
+
+Converting GML script: ${project_dir}\objects\ob_init\Other_2.gml
+Converted description /// @description  Initialize Global Game Variables
+
+Converting GML script: ${project_dir}\objects\ob_camera\Step_0.gml
+Converted builtin - line 24: view_object = self -> __view_set( e__VW.Object, 0, self )
+Converted builtin - line 35: view_object = self -> __view_set( e__VW.Object, 0, self )
+Converted builtin - line 42: view_object = noone -> __view_set( e__VW.Object, 0, noone )
+Converted builtin - line 43: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script: ${project_dir}\objects\ob_display_manager\Create_0.gml
+Converted description /// @description  Display Properties
+
+Converting GML script: ${project_dir}\objects\ob_display_manager\Alarm_0.gml
+Converted description /// @description  Center Window
+
+Converting GML script: ${project_dir}\objects\ob_display_manager\Step_0.gml
+Converted string - line 2: 'Z' -> "Z"
+
+Converting GML script: ${project_dir}\objects\ob_display_manager\Other_4.gml
+Converted description /// @description  Fade In
+
+Converting GML script: ${project_dir}\objects\ob_grid\Destroy_0.gml
+Converted description /// @description  Destroy the grid
+
+Converting GML script: ${project_dir}\objects\ob_grid\Other_4.gml
+Converted description /// @description Create the grid
+
+Converting GML script: ${project_dir}\objects\ob_player_control\Create_0.gml
+Converted description /// @description  Initialize players
+
+Converting GML script: ${project_dir}\objects\ob_player_control\Step_0.gml
+Converted description /// @description  Toggle debug mode
+Converted string - line 2: 'G' -> "G"
+
+Converting GML script: ${project_dir}\objects\ob_player_control\Other_75.gml
+Converted description /// @description  Gamepad 
+
+Converting GML script: ${project_dir}\objects\ob_player_control\Draw_64.gml
+Converted description /// @description  Draw debug information
+
+Converting GML script: ${project_dir}\objects\PAR_SLOPE\Other_4.gml
+Converted description /// @description  Tile Slope
+
+Converting GML script: ${project_dir}\objects\PAR_BREAKABLE\Create_0.gml
+Converted description /// @description  Setup
+
+Converting GML script: ${project_dir}\objects\PAR_BREAKABLE\Draw_0.gml
+Converted description /// @description  Draw Critical Zone
+
+Converting GML script: ${project_dir}\objects\PAR_SWITCH\Create_0.gml
+Converted description /// @description  Initialize Switch
+
+Converting GML script: ${project_dir}\objects\PAR_SYSTEM\Create_0.gml
+Converted description /// @description  Initialize System
+
+Converting GML script: ${project_dir}\objects\PAR_DAMAGE\Create_0.gml
+Converted description /// @description  Initialize damage object
+
+Converting GML script: ${project_dir}\objects\PAR_DAMAGE\Alarm_0.gml
+Converted description /// @description  Destroy Damage Object
+
+Converting GML script: ${project_dir}\objects\PAR_DAMAGE\Step_2.gml
+Converted description /// @description  Collision with objects
+
+Converting GML script: ${project_dir}\objects\ob_pathtest\Alarm_0.gml
+Converted description /// @description  Create the path and move to the mouse
+
+Converting GML script: ${project_dir}\objects\ob_pathtest\Step_0.gml
+Converted builtin - line 1: view_wview -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}\objects\ob_pathseeker\Create_0.gml
+Converted description /// @description  Initialize Seeker
+
+Converting GML script: ${project_dir}\objects\ob_pathseeker\Alarm_1.gml
+Converted description /// @description  Path alarm
+
+Converting GML script: ${project_dir}\objects\ob_pathseeker\Alarm_0.gml
+Converted description /// @description  Damage Alarm
+
+Converting GML script: ${project_dir}\objects\ob_pathseeker\Step_0.gml
+Converted builtin - line 9: view_wview -> __view_get( e__VW.WView, 0 )
+
+Converting GML script: ${project_dir}\objects\ob_damage\Alarm_0.gml
+Converted description /// @description  Prevent Self Destruction
+
+Converting GML script: ${project_dir}\objects\ob_pathonly\Create_0.gml
+Converted description /// @description  Initialize Seeker
+
+Converting GML script: ${project_dir}\objects\ob_pathonly\Alarm_2.gml
+Converted description /// @description  Wander
+
+Converting GML script: ${project_dir}\objects\ob_pathonly\Alarm_1.gml
+Converted description /// @description  Path Reset Alarm
+
+Converting GML script: ${project_dir}\objects\ob_pathonly\Alarm_0.gml
+Converted description /// @description  Stall
+
+Converting GML script: ${project_dir}\objects\ob_bot\Create_0.gml
+Converted description /// @description  Initialize the bot
+
+Converting GML script: ${project_dir}\objects\ob_bot\Alarm_0.gml
+Converted description /// @description  alarming
+
+Converting GML script: ${project_dir}\objects\ob_bot\Draw_0.gml
+Converted description /// @description  Draw debug information
+
+Converting GML script: ${project_dir}\objects\ob_bot_arm\Alarm_0.gml
+Converted description /// @description  Bullet Delay Alarm
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\objects\ob_checkpoint\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\ob_obstacle\Alarm_0.gml
+Converted description /// @description  Damage Delay
+
+Converting GML script: ${project_dir}\objects\ob_textbox\Create_0.gml
+Converted builtin - line 37: view_xview[view_current] -> __view_get( e__VW.XView, view_current )
+Converted builtin - line 38: view_yview[view_current] -> __view_get( e__VW.YView, view_current )
+
+Converting GML script: ${project_dir}\objects\ob_textbox\Destroy_0.gml
+Converted description /// @description  Textbox Cleanup
+
+Converting GML script: ${project_dir}\objects\ob_textbox\Step_0.gml
+Converted builtin - line 4: view_xview[view_current]=view_xstart+choose(-2,-1,0,1,2) -> __view_set( e__VW.XView, view_current, view_xstart+choose(-2,-1,0,1,2) )
+Converted builtin - line 9: view_xview[view_current]=view_xstart -> __view_set( e__VW.XView, view_current, view_xstart )
+Converted builtin - line 5: view_yview[view_current]=view_ystart+choose(-2,-1,0,1,2) -> __view_set( e__VW.YView, view_current, view_ystart+choose(-2,-1,0,1,2) )
+Converted builtin - line 10: view_yview[view_current]=view_ystart -> __view_set( e__VW.YView, view_current, view_ystart )
+
+Converting GML script: ${project_dir}\objects\ob_textbox\Draw_64.gml
+Converted description /// @description  Draw Textbox
+
+Converting GML script: ${project_dir}\objects\PAR_TALK\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\PAR_TALK\Alarm_0.gml
+Converted description /// @description  Reset talk
+
+Converting GML script: ${project_dir}\objects\PAR_TALK\Step_0.gml
+Converted description /// @description  Create Textbox
+
+Missing audiogroup for sound: 'snd_click' - setting to default audio group
+Missing audiogroup for sound: 'snd_textboxclose' - setting to default audio group
+Missing audiogroup for sound: 'snd_voicehigh' - setting to default audio group
+Missing audiogroup for sound: 'snd_voicelow' - setting to default audio group
+Missing audiogroup for sound: 'snd_voicemid' - setting to default audio group
+Missing audiogroup for sound: 'snd_voicethought' - setting to default audio group
+Missing audiogroup for sound: 'snd_button' - setting to default audio group
+Missing audiogroup for sound: 'snd_talkinit' - setting to default audio group
+Imported layer depths for room(s) 'rm_city_test' were not adequately spaced. Unless updated this will have undefined results in game.
+Game speed set to 60
+Added compatibility script 'action/action_set_cursor.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'sound/sound_play.gml'
+Added compatibility script 'view/room_set_view.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

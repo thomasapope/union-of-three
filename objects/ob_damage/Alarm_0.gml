@@ -1,0 +1,2 @@
+/// @description  Prevent Self Destruction
+
