@@ -105,14 +105,15 @@ if (door && (key_activate || (door.border_door && door.border_dir == sign(hsp[0]
     // Go to target room
     if (door.target_room != room) { // Don't change rooms if we're already there
         room_goto(door.target_room);
+		
+	    // Position self
+	    sc_player_clear();
+	    x = door.target_x;
+	    y = door.target_y;
+	    ob_camera.x = x;
+	    ob_camera.y = y;
     }
     
-    // Position self
-    sc_player_clear();
-    x = door.target_x;
-    y = door.target_y;
-    ob_camera.x = x;
-    ob_camera.y = y;
 }   
 
 // Talk to people

@@ -44,7 +44,7 @@ display_set_gui_size(ideal_width, ideal_height);
 alarm[0] = 1;
 
 /// Initialize Game Variables
-global.debug = 1;
+global.debug = 0;
 global.weapons = 1; // Counts from 0, actually 1 more than displayed
 
 sc_weapon_array();

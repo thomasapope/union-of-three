@@ -1,3 +1,3 @@
-new_room = rm_barrier;
-new_x = 16;
-new_y = 736;
+target_room = rm_barrier;
+target_x = 16;
+target_y = 736;

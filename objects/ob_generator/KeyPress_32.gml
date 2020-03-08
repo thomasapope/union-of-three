@@ -1,2 +1,2 @@
-dir = toggle(dir);
+//dir = toggle(dir);
 

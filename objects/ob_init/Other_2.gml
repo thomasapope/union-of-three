@@ -1,6 +1,6 @@
 /// @description  Initialize Global Game Variables
 // Game Settings
-global.debug = 1;
+global.debug = 0;
 global.weapons = 1; // Counts from 0, actually 1 more than displayed
 
 sc_weapon_array();

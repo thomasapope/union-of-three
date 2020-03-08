@@ -1,8 +1,8 @@
 /// @description  INITIALIZE THE PLAYER
 event_inherited();
 state = player_state_move;
-empowered = 0; // has kinesis
-walking = 1;
+empowered = 1; // has kinesis
+walking = 0;
 weapon = 0;
 
 // Body Parts
