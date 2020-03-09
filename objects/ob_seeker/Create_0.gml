@@ -16,7 +16,7 @@ initialize_movement_entity(  0,       // gravity
 
 event_inherited();
 attack = 10;
-hp = 500;
+hp = 200;
 
 mobile = 1;
 text = 1;
